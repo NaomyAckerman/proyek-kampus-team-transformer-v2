@@ -49,6 +49,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['login'] = 'Auth/login';
+$route['login_admin'] = 'Auth/login_admin';
+$route['logout'] = 'Auth/logout';
+$route['registrasi'] = 'Auth/registrasi';
+$route['lupapassword'] = 'Auth/lupapassword';
+
+$route['keranjang'] = 'Home/keranjang';
+$route['notifikasi'] = 'Home/notifikasi';
+$route['bestseller'] = 'Home/bestseller';
+$route['testimoni'] = 'Home/testimoni';
+$route['uploadtesti'] = 'Home/uploadtesti';
+$route['updatestok'] = 'Home/updatestok';
+$route['konfirmasi'] = 'Home/konfirmasi';
+$route['akun'] = 'Home/akun';
+
+$route['dashboard'] = 'Admin/dashboard';
+$route['admin_akun'] = 'Admin/admin_akun';
+$route['input_akun'] = 'Admin/input_akun';
+$route['profile'] = 'Admin/profile';
+$route['admin_produk'] = 'Admin/admin_produk';
+$route['input_produk'] = 'Admin/input_produk';
+$route['admin_testimoni'] = 'Admin/admin_testimoni';
+$route['admin_transaksi'] = 'Admin/admin_transaksi';
+$route['admin_customer'] = 'Admin/admin_customer';
+$route['admin_kategori_produk'] = 'Admin/admin_kategori_produk';
+$route['input_kategori_produk'] = 'Admin/input_kategori_produk';
